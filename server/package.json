@@ -5,7 +5,6 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "scss": "node-sass -r -w views -o public/css --output-style compressed",
     "build:scss": "webpack",
     "build:scss-w": "webpack -w"
   },
