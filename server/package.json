@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "scss": "node-sass -r -w views -o public/css --output-style compressed"
+    "scss": "node-sass -r -w views -o public/css --output-style compressed",
+    "build:scss": "webpack",
+    "build:scss-w": "webpack -w"
   },
   "author": "Polina Malinina",
   "license": "ISC",
@@ -13,7 +15,14 @@
     "body-parser": "^1.19.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
-    "node-sass": "^4.14.1",
     "nodemailer": "^6.3.1"
+  },
+  "devDependencies": {
+    "css-loader": "^4.3.0",
+    "mini-css-extract-plugin": "^0.11.2",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.2",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
   }
 }
