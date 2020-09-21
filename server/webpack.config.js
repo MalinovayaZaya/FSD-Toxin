@@ -2,10 +2,13 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
-  entry: { main: './views/pages/home/home.scss' },
+  entry: { 
+    home: ['./views/pages/home/home.scss'],
+    about: ['./views/pages/about/about.scss']
+  },
   output: {
-    path: path.resolve(__dirname, 'public'),
-    filename: 'main.js'
+    path: path.resolve(__dirname, 'public/js'),
+    filename: '[name].js'
   },
   module: {
     rules: [
@@ -17,7 +20,7 @@ module.exports = {
   },
   plugins: [ 
     new MiniCssExtractPlugin({
-      filename: './css/main.css',
+      filename: '../css/[name].css',
     })
   ]
 };
