@@ -1,0 +1,29 @@
+[
+  {
+    "path": "/",
+    "page": {
+      "title": "",
+      "description": " ",
+      "body": "pages/home/body",
+      "head": "pages/home/head"
+    }
+  },
+  {
+    "path": "/about",
+    "page": {
+      "title": "",
+      "description": "",
+      "body": "pages/about/body",
+      "head": "pages/about/head"
+    }
+  },
+  {
+    "path": "/catalogue",
+    "page": {
+      "title": "",
+      "description": "",
+      "body": "pages/catalogue/body",
+      "head": "pages/catalogue/head"
+    }
+  }
+]
